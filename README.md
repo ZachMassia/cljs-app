@@ -1,18 +1,18 @@
 # cljs-app
 
-A Leiningen template for getting a ClojureScript development environment setup with [Weasel](github.com/tomjakubowski/weasel) and [Simpleton](github.com/tailrecursion/lein-simpleton).
+A Leiningen template for getting a ClojureScript development environment setup with [Weasel](http://github.com/tomjakubowski/weasel) and [Simpleton](http://github.com/tailrecursion/lein-simpleton).
 
 ## Usage
 
-Run `lein cljsbuild auto` in a terminal.
+Run `lein new cljs-app my-app && cd $_` and then `lein cljsbuild auto`.
 
 Open up `src/core.cljs` in Emacs and run `cider-jack-in` or hit <kbd>C-c M-j</kbd>.
 
 Once the REPL is fired up, enter `(browser-repl)`.
 
 You now have two options:
-* Open `file://path/to/project/resources/index.html`.
-* Run `lein server` and open `localhost:8080`.
+* Open `file://path/to/my-app/resources/index.html`.
+* Run `lein server` and open [localhost:8080](http://localhost:8080).
 
 To make sure everything is working, try out `(js/alert "Testing")` in the REPL.
 
