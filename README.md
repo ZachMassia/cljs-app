@@ -14,6 +14,8 @@ You now have two options:
 * Open `file://path/to/project/resources/index.html`.
 * Run `lein server` and open `localhost:8080`.
 
+To make sure everything is working, try out `(js/alert "Testing")` in the REPL.
+
 ## License
 
 Copyright © 2014 Zachary Massia
