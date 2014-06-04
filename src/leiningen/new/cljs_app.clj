@@ -8,6 +8,7 @@
   (let [data {:name name
               :sanitized (name-to-path name)}]
     (->files data
+             [".gitignore" (render "gitignore" data)]
              ["project.clj" (render "project.clj" data)]
              ["src/{{sanitized}}/core.cljs" (render "core.cljs" data)]
              ["resources/index.html" (render "index.html" data)])))
