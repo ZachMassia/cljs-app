@@ -1,4 +1,4 @@
-(defproject cljs-app/lein-template "0.1.1"
+(defproject cljs-app/lein-template "0.1.2"
   :description "A simple ClojureScript app template using Weasel and Simpleton"
   :url "https://github.com/zachmassia/cljs-app"
   :license {:name "Eclipse Public License"
