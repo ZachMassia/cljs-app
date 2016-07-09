@@ -18,7 +18,7 @@
   :injections [(require '[cemerick.piggieback :refer [cljs-repl]]
                         '[weasel.repl.websocket :refer [repl-env]])
                (defn browser-repl []
-                 (cljs-repl :repl-env (repl-env :ip "0.0.0.0" :port 9001)))]
+                 (cljs-repl (repl-env :ip "0.0.0.0" :port 9001)))]
   ;; ===========================================================================
 
   :aliases {"server" ["trampoline" "simpleton" "8080" "file" ":from" "resources"]}
