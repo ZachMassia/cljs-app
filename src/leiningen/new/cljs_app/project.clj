@@ -2,12 +2,12 @@
   :description "FIXME: write this!"
   :url "http://example.com/FIXME"
 
-  :dependencies [[org.clojure/clojure "1.6.0"]
-                 [org.clojure/clojurescript "0.0-2227"]
-                 [com.cemerick/piggieback "0.1.3"]
-                 [weasel "0.2.0"]]
+  :dependencies [[org.clojure/clojure "1.8.0"]
+                 [org.clojure/clojurescript "1.9.89"]
+                 [com.cemerick/piggieback "0.2.1"]
+                 [weasel "0.7.0"]]
 
-  :plugins [[lein-cljsbuild "1.0.3"]
+  :plugins [[lein-cljsbuild "1.1.3"]
             [lein-simpleton "1.3.0"]]
 
   :source-paths ["src"]
@@ -22,8 +22,8 @@
   ;; ===========================================================================
 
   :aliases {"server" ["trampoline" "simpleton" "8080" "file" ":from" "resources"]}
-  
-  :cljsbuild { 
+
+  :cljsbuild {
     :builds [{:id "{{name}}"
               :source-paths ["src"]
               :compiler {
